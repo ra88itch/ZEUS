@@ -1,0 +1,50 @@
+/* ICON
+--------------------------------------------------------*/
+.icon24 {
+	background: transparent url('../images/icons/icon24.png') no-repeat 24px 24px;
+	cursor:pointer;
+	display:block;
+	height:24px;
+	margin:0 auto;
+	overflow:hidden;
+	width:24px;
+}
+.icon24.delete {
+		background-position: 0px 0px;
+}
+.icon24.delete:hover {
+		background-position: 0px -24px;
+}
+.icon24.edit {
+		background-position: -48px 0px;
+}
+.icon24.edit:hover {
+		background-position: -48px -24px;
+}
+.icon24.invisible {
+		background-position: -96px 0px;
+}
+.icon24.invisible:hover {
+		background-position: -96px -24px;
+}
+.icon24.visible {
+		background-position: -144px 0px;
+}
+.icon24.visible:hover {
+		background-position: -144px -24px;
+}
+.icon24.status.lock {
+		background-position: -24px 0px;
+}
+.icon24.status.lock:hover {
+		background-position: -24px -24px;
+}
+.icon24.status {
+		background-position: -72px 0px;
+}
+.icon24.status:hover {
+		background-position: -72px -24px;
+}
+.icon24.renew {
+		background-position: -168px 0px;
+}

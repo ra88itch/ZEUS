@@ -1,0 +1,77 @@
+#pop .warp {
+	height:650px;
+	margin: 20px auto 0;
+}
+#img_preview {
+	float:right;
+	width: 250px;
+	margin: 50px;
+}
+#sec-employee .col12 p {
+	cursor:default;
+}
+
+
+#sec-employee table,
+#sec-employee table thead,
+#sec-employee table tbody,
+#sec-employee table tr {
+	display:block;
+	width:100%;
+}
+#sec-employee table thead tr td,
+#sec-employee table tbody tr td {
+	display:inline-block;
+	text-align:left;
+}
+#sec-employee table tr td:nth-child(1){
+	min-width:5%;
+	max-width:5%;
+	width:5%;
+}
+#sec-employee table tr td:nth-child(2){
+	min-width:15%;
+	max-width:15%;
+	width:15%;
+}
+#sec-employee table tr td:nth-child(3){
+	min-width:35%;
+	max-width:35%;
+	width:35%;
+}
+#sec-employee table tr td:nth-child(4){
+	min-width:15%;
+	max-width:15%;
+	width:15%;
+}
+#sec-employee table tr td:nth-child(5){
+	min-width:12%;
+	max-width:12%;
+	width:12%;
+}
+#sec-employee table tr td:nth-child(6){
+	min-width:5%;
+	max-width:5%;
+	width:5%;
+}
+#sec-employee table tr td:nth-child(7){
+	min-width:5%;
+	max-width:5%;
+	width:5%;
+}
+#sec-employee table thead {
+	border-bottom:1px solid rgba(0,0,0,0.2);
+	padding:0 0 10px 0;
+}
+#sec-employee table tr td:nth-child(5),
+#sec-employee table tr td:nth-child(6),
+#sec-employee table tr td:nth-child(7){
+	text-align:center;
+}
+#sec-employee table tbody tr{
+	border-bottom:1px dotted rgba(0,0,0,0.1);
+	padding:3px 0;
+}
+#sec-employee table tbody tr:hover{
+	background-color:rgba(9,9,9,0.1);
+}

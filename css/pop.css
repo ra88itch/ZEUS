@@ -1,0 +1,120 @@
+/* POP
+--------------------------------------------------------*/
+#pop {
+	background-color: rgba(0, 0, 0, 0.6);
+	display: none;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99999;
+}
+
+#pop .warp {
+    background-color: #fff;
+    border-radius: 5px;
+    min-height: 400px;
+    margin: 40px auto 0;
+    padding: 20px;
+    width: 800px;
+}
+#pop .title {	
+	border-bottom: 3px solid #000;
+	font-size:2em:
+	font-weight:700;
+    margin: 0;
+    padding: 0 0 5px;
+}
+#pop #cancel {
+	cursor: pointer;
+}
+#pop ul.form {
+	list-style-type: none;
+	padding: 10px 0;
+	margin: 0px;
+}
+#pop ul.form li {
+	padding: 4px 0;
+}
+#pop ul.form li > span.label{
+	display: inline-block;
+    padding-top: 2px;
+    vertical-align: top;
+    width: 15%;
+}
+#pop #submit{
+	background-color: #009600;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3) inset;
+    color: #fff;
+    overflow: hidden;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+/* POP INPUT
+--------------------------------------------------------*/
+#pop input[type="text"] {
+	width:500px;
+}
+#pop textarea {
+	height:80px;
+	width:500px;
+	min-height:80px;
+	min-width:500px;
+	max-height:80px;
+	max-width:500px;
+}
+#pop select {
+	background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    color: #000;
+    font-size: 1em;
+    padding: 5px;
+	min-width:120px;
+}
+
+#pop div.submit {
+	clear:both;
+	display:block;
+	padding-top:15px;
+	text-align:right;
+}
+#pop div.submit input.submit{
+	background-color:#009600;
+	bottom:0px;
+	box-shadow:0 0 10px 1px rgba(0, 0, 0, 0.3) inset;
+	color:#fefefe;
+	cursor:pointer;
+	height:50px;
+	text-align:center;
+	text-shadow:1px 1px 2px rgba(0, 0, 0, 0.8);
+	width:300px;
+}
+#pop .order_units {
+	margin:15px 0;
+}
+#pop .order_units .col6{
+	text-align:left;
+}
+#pop .order_units textarea {
+	height: 180px;
+    margin: 15px 0;
+    max-height: 180px;
+    max-width: 350px;
+    min-height: 180px;
+    min-width: 350px;
+    width: 350px;
+}
+#pop .menudetail #order_now{
+	background-color: #009600;
+	border-radius: 3px;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3) inset;
+    color: #fff;
+	cursor:pointer;
+    overflow: hidden;
+	padding:8px 0;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}

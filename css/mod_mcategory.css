@@ -1,0 +1,66 @@
+#pop .warp {
+	height:650px;
+}
+#img_preview {
+	float:right;
+	width: 250px;
+	margin: 50px;
+}
+#sec-menu .col12 p {
+	cursor:default;
+}
+
+
+#sec-menu table,
+#sec-menu table thead,
+#sec-menu table tbody,
+#sec-menu table tr {
+	/*display:block;*/
+	width:100%;
+}
+#sec-menu table thead tr td {
+	font-weight:bold;
+}
+#sec-menu table thead tr td,
+#sec-menu table tbody tr td {
+	display:inline-block;
+	text-align:left;
+}
+#sec-menu table tr td:nth-child(1){
+	min-width:5%;
+	max-width:5%;
+	width:5%;
+}
+#sec-menu table tr td:nth-child(2){
+	min-width:40%;
+	max-width:40%;
+	width:40%;
+}
+#sec-menu table tr td:nth-child(3),
+#sec-menu table tr td:nth-child(4){
+	min-width:20%;
+	max-width:20%;
+	width:20%;
+}
+#sec-menu table tr td:nth-child(5){
+	min-width:10%;
+	max-width:10%;
+	width:10%;
+}
+
+#sec-menu table thead {
+	border-bottom:1px solid rgba(0,0,0,0.2);
+	padding:0 0 10px 0;
+}
+#sec-menu table tr td:nth-child(3),
+#sec-menu table tr td:nth-child(4),
+#sec-menu table tr td:nth-child(5){
+	text-align:center;
+}
+#sec-menu table tbody tr{
+	border-bottom:1px dotted rgba(0,0,0,0.1);
+	padding:3px 0;
+}
+#sec-menu table tbody tr:hover{
+	background-color:rgba(9,9,9,0.1);
+}

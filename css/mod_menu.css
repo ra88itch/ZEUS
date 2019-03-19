@@ -1,0 +1,53 @@
+#container{
+	margin-top : 20px;
+}
+.label {
+	float:left;
+	text-align:right;
+	width:120px;
+	margin-right:10px;
+}
+.pageBox{
+	font-size:14px;
+	float:left;
+	position:relative;
+	min-height:500px;
+	background-color:FFF;
+	width:300px;
+	padding:10px;
+	margin:10px;
+}
+
+.pageBox input,select,textarea{
+	resize: none;
+	width:150px;
+	display:inline-block;
+}
+.label_header{
+	float:left;
+	width:100%;
+	margin-bottom:20px;
+	text-align:right;
+}
+
+.menu li {
+	cursor:pointer;
+}
+.detailLabel {
+	float:left;
+	width: 80;
+	font-size:14px;
+}
+.detailData {
+	float:right;
+	width: 180;
+	font-size:14px;
+}
+.detailItem {
+	margin-top:7px;
+	width:280;
+	float :left;
+}
+.detailImg  img{
+	width:250;
+}

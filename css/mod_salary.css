@@ -1,0 +1,68 @@
+#sec-salary .col12 p {
+	cursor:default;
+}
+
+
+#sec-salary table,
+#sec-salary table thead,
+#sec-salary table tbody,
+#sec-salary table tr {
+	display:block;
+	width:100%;
+}
+#sec-salary table thead tr td,
+#sec-salary table tbody tr td {
+	display:inline-block;
+	text-align:left;
+}
+#sec-salary table tr td:nth-child(1){
+	min-width:5%;
+	max-width:5%;
+	width:5%;
+}
+#sec-salary table tr td:nth-child(2){
+	min-width:15%;
+	max-width:15%;
+	width:15%;
+}
+#sec-salary table tr td:nth-child(3){
+	min-width:45%;
+	max-width:45%;
+	width:45%;
+}
+#sec-salary table tr td:nth-child(4){
+	min-width:10%;
+	max-width:10%;
+	width:10%;
+}
+#sec-salary table tr td:nth-child(5){
+	min-width:12%;
+	max-width:12%;
+	width:12%;
+}
+#sec-salary table tr td:nth-child(6){
+	min-width:5%;
+	max-width:5%;
+	width:5%;
+}
+#sec-salary table tr td:nth-child(7){
+	min-width:5%;
+	max-width:5%;
+	width:5%;
+}
+#sec-salary table thead {
+	border-bottom:1px solid rgba(0,0,0,0.2);
+	padding:0 0 10px 0;
+}
+#sec-salary table tr td:nth-child(5),
+#sec-salary table tr td:nth-child(6),
+#sec-salary table tr td:nth-child(7){
+	text-align:center;
+}
+#sec-salary table tbody tr{
+	border-bottom:1px dotted rgba(0,0,0,0.1);
+	padding:3px 0;
+}
+#sec-salary table tbody tr:hover{
+	background-color:rgba(9,9,9,0.1);
+}

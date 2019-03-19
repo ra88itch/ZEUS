@@ -1,0 +1,205 @@
+/*.open {
+	color: #fff;
+	cursor: pointer;
+	background-color: #009600;
+    border-radius: 3px;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3) inset;
+    color: #fff;
+    cursor: pointer;
+    margin: 13px 0;
+    overflow: hidden;
+    padding: 8px 0;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+#pop .warp {
+	height: 600px;
+	margin: 20px auto 0 ;
+}
+#chkbill {
+	display:none;
+}
+#menu {
+	height: 300px;
+	overflow-y:scroll;
+}
+#menu-detail {
+	margin-top : 20px;
+	display : none;
+}
+#menuImage {
+	height: 300px;
+	width : 300px;
+	float: left;
+}
+
+#menuImage > img {
+	width : 250px;
+	height: 180px;
+	margin: 20px;
+}
+
+#myOrder {
+	background-color: rgba(255, 255, 255, 0.8);
+	width:100%;
+	
+}
+
+#myOrder thead {
+	background-color: rgba(0, 0, 0, 0.4);
+	width: 100%;
+}
+#myOrder td {
+	padding : 10px;
+}
+#myOrder tr th:nth-child(1) {
+	max-width: 30%;
+    min-width: 30%;
+    width: 30%;
+}
+#myOrder tr th:nth-child(2) {
+	max-width: 10%;
+    min-width: 10%;
+    width: 10%;
+	text-align:center;
+}
+#myOrder tr th:nth-child(3) {
+	max-width: 40%;
+    min-width: 40%;
+    width: 40%;
+}
+#myOrder tr th:nth-child(4) {
+	max-width: 10%;
+    min-width: 10%;
+    width: 10%;
+	text-align:center;
+}
+#myOrder tr th:nth-child(5) {
+	max-width: 10%;
+    min-width: 10%;
+    width: 10%;
+	text-align:center;
+}
+
+#myOrder tr td:nth-child(2) {
+	max-width: 10%;
+    min-width: 10%;
+    width: 10%;
+	text-align:center;
+}
+#myOrder tr td:nth-child(4) {
+	max-width: 10%;
+    min-width: 10%;
+    width: 10%;
+	text-align:center;
+}
+#myOrder tr td:nth-child(5) {
+	max-width: 10%;
+    min-width: 10%;
+    width: 10%;
+	text-align:center;
+}
+.del {
+	background-color: rgb(255, 0, 0);
+    border-radius: 3px;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3) inset;
+    color: #000;
+    cursor: pointer;
+    margin: 0 0 10px;
+    overflow: hidden;
+    padding: 8px 0;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}*/
+
+
+#menu-list {
+	background-color:steelblue;
+	bottom:0px;
+	height:0px;	
+	padding:0px;
+	position:fixed;
+	transition: height 1s;
+	width:100%;
+}
+#menu-list #menu {
+	height:80%;
+	overflow-y:scroll;
+}
+#menu-list .open {
+	border: 1px solid #fff;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    padding: 8px 0;
+    position: absolute;
+    right: 10px;
+    text-align: center;
+    top: -30px;
+    width: 40px;
+}
+#menu-list .close {
+	border: 1px solid #fff;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    padding: 8px 0;
+    position: absolute;
+    right: 10px;
+    text-align: center;
+    top: 10px;
+    width: 40px;
+}
+#menu-list.result.visible {
+	height:700px;
+	transition: height 1s;
+}
+#menu-list.result .col3 {
+	height:105px;
+}
+#sec-order .result .col3 {
+	height:105px;
+}
+#customer-detail table {
+	background-color: rgba(255, 255, 255, 0.8);
+	width:100%;
+}
+#customer-detail table thead{
+	background-color: rgba(0, 0, 0, 0.4);
+	width:100%;
+}
+#customer-detail table thead td{
+	text-align:center;
+}
+#customer-detail .open {
+	color:#fff;
+	cursor:pointer;
+}
+#menu-list > select,
+#menu-list > #search_menu {
+	font-size:1.2em;
+	padding:10px 5px;
+	position:absolute;
+	top:20px;
+}
+#menu-list #cooking_list {
+	left:550px;
+}
+#menu-list #meat_list {
+	left:500px;
+}
+#menu-list > #search_menu {
+	left:270px;
+}
+#menu-list #show_all {
+	background-color:#fff;
+	border:1px solid #ddd;
+	border-radius:3px;
+	cursor:pointer;
+	font-size:1.2em;
+	left:780px;
+	padding:10px 5px;
+	position:absolute;
+	top:20px;
+}

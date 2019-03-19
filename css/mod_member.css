@@ -1,0 +1,72 @@
+#sec-member .col12 p {
+	cursor:default;
+}
+
+
+#sec-member table,
+#sec-member table thead,
+#sec-member table tbody,
+#sec-member table tr {
+	/*display:block;*/
+	width:100%;
+}
+#sec-member table thead tr td {
+	font-weight:bold;
+}
+#sec-member table thead tr td,
+#sec-member table tbody tr td {
+	display:inline-block;
+	text-align:left;
+}
+#sec-member table tr td:nth-child(1){
+	min-width:5%;
+	max-width:5%;
+	width:5%;
+}
+#sec-member table tr td:nth-child(2){
+	min-width:15%;
+	max-width:15%;
+	width:15%;
+}
+#sec-member table tr td:nth-child(3){
+	min-width:25%;
+	max-width:25%;
+	width:25%;
+}
+#sec-member table tr td:nth-child(4){
+	min-width:10%;
+	max-width:10%;
+	width:10%;
+}
+#sec-member table tr td:nth-child(5){
+	min-width:22%;
+	max-width:22%;
+	width:22%;
+}
+#sec-member table tr td:nth-child(6),
+#sec-member table tr td:nth-child(7),
+#sec-member table tr td:nth-child(8){
+	min-width:6%;
+	max-width:6%;
+	width:6%;
+}
+
+#sec-member table thead {
+	border-bottom:1px solid rgba(0,0,0,0.2);
+	padding:0 0 10px 0;
+}
+#sec-member table tr td:nth-child(1),
+#sec-member table tr td:nth-child(4),
+#sec-member table tr td:nth-child(5),
+#sec-member table tr td:nth-child(6),
+#sec-member table tr td:nth-child(7),
+#sec-member table tr td:nth-child(8){
+	text-align:center;
+}
+#sec-member table tbody tr{
+	border-bottom:1px dotted rgba(0,0,0,0.1);
+	padding:3px 0;
+}
+#sec-member table tbody tr:hover{
+	background-color:rgba(9,9,9,0.1);
+}
