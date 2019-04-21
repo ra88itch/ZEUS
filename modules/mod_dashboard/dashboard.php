@@ -59,6 +59,9 @@ defined('R88PROJ') or die ($system_error);
 			<div class="col3">
 				<a href="?mod=cancel_order"><img src="images/mod_cancel_order.png"></a>
 			</div>
+			<div class="col3">
+				<a href="?mod=boxing"><img src="images/mod_boxing.png"></a>
+			</div>
 			<div class="clear"></div>
 		</div>
 
@@ -146,6 +149,9 @@ defined('R88PROJ') or die ($system_error);
 		</div>	
 		<div class="onerow">
 			<div class="result">
+				<div class="col3">
+					<a href="?mod=mecoupon"><p>ระบบบริหารจัดการ<br>eCoupon</p></a>
+				</div>
 				<div class="col3">
 					<a href="?mod=report_daily"><p>รายการสั่งอาหารประจำวัน<br>แยกแผนก</p></a>
 				</div>

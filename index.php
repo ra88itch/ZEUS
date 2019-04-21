@@ -32,22 +32,46 @@ $target = $_GET['target'];
 }
 //$target = $_GET['target'];
 if(isset($_SESSION['login'])){
-	if($_SESSION['user_name']=='kitchen'){
+	/*if($_SESSION['user_name']=='kitchen'){
 		$module = 'k_'.$module;
+	}*/
+	switch($_SESSION['user_name']){
+		case 'kitchen':
+			$module = 'k_'.$module;
+			break;
+		case 'boxing':
+			$module = 'b_'.$module;
+			break;
 	}
 	if(isset($module) && $module != ''){
 		if(file_exists('modules/mod_'. $module .'/'.$module.'.php')){
 			$module = strtolower ( $module );
 		}else{
 			$module = 'dashboard';
-			if($_SESSION['user_name']=='kitchen'){
+			/*if($_SESSION['user_name']=='kitchen'){
 				$module = 'k_'.$module;
+			}*/
+			switch($_SESSION['user_name']){
+				case 'kitchen':
+					$module = 'k_'.$module;
+					break;
+				case 'boxing':
+					$module = 'b_'.$module;
+					break;
 			}
 		}			
 	}else{
 		$module = 'dashboard';
-		if($_SESSION['user_name']=='kitchen'){
+		/*if($_SESSION['user_name']=='kitchen'){
 			$module = 'k_'.$module;
+		}*/
+		switch($_SESSION['user_name']){
+			case 'kitchen':
+				$module = 'k_'.$module;
+				break;
+			case 'boxing':
+				$module = 'b_'.$module;
+				break;
 		}
 	}
 	

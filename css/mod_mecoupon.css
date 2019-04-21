@@ -1,0 +1,62 @@
+#sec-account .col12 p {
+	cursor:default;
+}
+
+
+#sec-account table,
+#sec-account table thead,
+#sec-account table tbody,
+#sec-account table tr {
+	/*display:block;*/
+	width:100%;
+}
+#sec-account table thead tr td {
+	font-weight:bold;
+}
+#sec-account table thead tr td,
+#sec-account table tbody tr td {
+	display:inline-block;
+	text-align:left;
+}
+#sec-account table tr td:nth-child(1){
+	min-width:5%;
+	max-width:5%;
+	width:5%;
+}
+#sec-account table tr td:nth-child(2){
+	min-width:15%;
+	max-width:15%;
+	width:15%;
+}
+#sec-account table tr td:nth-child(3){
+	min-width:45%;
+	max-width:45%;
+	width:45%;
+}
+#sec-account table tr td:nth-child(4){
+	min-width:22%;
+	max-width:22%;
+	width:22%;
+}
+#sec-account table tr td:nth-child(5),
+#sec-account table tr td:nth-child(6){
+	min-width:5%;
+	max-width:5%;
+	width:5%;
+}
+#sec-account table thead {
+	border-bottom:1px solid rgba(0,0,0,0.2);
+	padding:0 0 10px 0;
+}
+#sec-account table tr td:nth-child(5),
+#sec-account table tr td:nth-child(6),
+#sec-account table tr td:nth-child(7){
+	text-align:center;
+}
+#sec-account table tbody tr{
+	border-bottom:1px dotted rgba(0,0,0,0.1);
+	padding:3px 0;
+}
+#sec-account table tbody tr:hover{
+	background-color:rgba(9,9,9,0.1);
+}
