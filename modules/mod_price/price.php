@@ -2,13 +2,18 @@
 defined('R88PROJ') or die ($system_error);
 
 function getZonePrice($zone_category){
+	$array = array('4','5','19','20','24','25','26','27','28','29','30','31');
 	$sql = "SELECT * FROM `zone_category` WHERE `id`='".$zone_category."'";
 	$query = mysql_query($sql);	
 	$results = mysql_fetch_assoc($query);
-	if($zone_category=='4' || $zone_category=='5' || $zone_category=='19' || $zone_category=='20'){
+	if(in_array($zone_category, $array)){
+		/*$response = '<tr>
+					<td>'.$results['zonename'].'</td>
+					<td><input type"text" id="category'.$zone_category.'" value="'.$results['charge'].'"> ระยะเวลา <input type"text" id="extra'.$zone_category.'" value="'.$results['extra'].'" disabled> เดือน</td>
+				</tr>';*/
 		$response = '<tr>
 					<td>'.$results['zonename'].'</td>
-					<td><input type"text" id="category'.$zone_category.'" value="'.$results['charge'].'"> ระยะเวลา <input type"text" id="extra'.$zone_category.'" value="'.$results['extra'].'"> เดือน</td>
+					<td><input type"text" id="category'.$zone_category.'" value="'.$results['charge'].'"> ระยะเวลา '.$results['extra'].' เดือน</td>
 				</tr>';
 	}else{
 		$response = '<tr>
@@ -45,18 +50,19 @@ function setPrice(){
 	var snooker		= $('#category8').val();
 	var snookerV	= $('#category9').val();
 
-	var extraM = $('#extra4').val();
+	/*var extraM = $('#extra4').val();
 	var extraY = $('#extra5').val();
 	var extraWM = $('#extra19').val();
-	var extraWY = $('#extra20').val();
+	var extraWY = $('#extra20').val();*/
 
 	var saunaSet	= $('#category15').val(); // คูปอง 15 มบ
 	var warranty	= $('#category16').val(); // เงินประกันรายได้
 	var paidMsgTha	= $('#category17').val();
 	var paidMsgSpa	= $('#category18').val();
 
-	if(massage!='' && massageV!='' && massageSpa!='' && massageRoom!='' && sauna!='' && fitness!='' && memberM!='' && memberY!='' && snooker!='' && snookerV!='' && extraM!='' && extraY!=''){
-		ajaxCall( 'api.php', finishResponse, { mod:'price', type:'setPrice', massage:massage, massageV:massageV, massageSpa:massageSpa, massageRoom:massageRoom, sauna:sauna, fitness:fitness, memberM:memberM, memberY:memberY, snooker:snooker, snookerV:snookerV, extraM:extraM, extraY:extraY, warranty:warranty, paidMsgTha:paidMsgTha, paidMsgSpa:paidMsgSpa, saunaSet:saunaSet, memberWM:memberWM, memberWY:memberWY, extraWM:extraWM, extraWY:extraWY });
+	if(massage!='' && massageV!='' && massageSpa!='' && massageRoom!='' && sauna!='' && fitness!='' && memberM!='' && memberY!='' && snooker!='' && snookerV!=''){
+		$('body').css('cursor','loading');
+		ajaxCall( 'api.php', finishResponse, { mod:'price', type:'setPrice', massage:massage, massageV:massageV, massageSpa:massageSpa, massageRoom:massageRoom, sauna:sauna, fitness:fitness, memberM:memberM, memberY:memberY, snooker:snooker, snookerV:snookerV, warranty:warranty, paidMsgTha:paidMsgTha, paidMsgSpa:paidMsgSpa, saunaSet:saunaSet, memberWM:memberWM, memberWY:memberWY });
 	}else{
 		alert('ห้ามใส่ช่องว่าง');
 	}
@@ -101,6 +107,7 @@ function finishResponse(response){
 						</table>
 						
 					</p>
+					<br><br><br>
 				</div>
 			</div>
 		</div>

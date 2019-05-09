@@ -1,17 +1,17 @@
 var mod = '?mod=account';
 $(document).ready(function(){
 	$('#add').click(function(){
-		ajaxCall( 'api.php', addResponsed, { mod:'mecoupon', type: 'add' } );
+		ajaxCall( 'api.php', addResponsed, { mod:'mboxing_ecoupon', type: 'add' } );
 	});	
 	$('.edit').click(function(){
 		var thisID = $(this).attr('id');
 		thisID = thisID.replace('edit','');
-		ajaxCall( 'api.php', editResponsed, { mod:'mecoupon', coupon_id: thisID, type: 'edit' } );
+		ajaxCall( 'api.php', editResponsed, { mod:'mboxing_ecoupon', coupon_id: thisID, type: 'edit' } );
 	});	
 	$('.status').click(function(){
 		var thisID = $(this).attr('id');
 		thisID = thisID.replace('status','');
-		ajaxCall( 'api.php', statusResponsed, { mod:'mecoupon', coupon_id: thisID, type: 'changeCouponStatus' } );
+		ajaxCall( 'api.php', statusResponsed, { mod:'mboxing_ecoupon', coupon_id: thisID, type: 'changeCouponStatus' } );
 	});	
 });
 function addResponsed(response){
@@ -31,7 +31,7 @@ function addResponsed(response){
 				alert('Price is empty.');
 				return false;
 			}
-			ajaxCall( 'api.php', addNewResponsed, { mod:'mecoupon', type: 'addNewCoupon', coupon_name: coupon_name, times: times, price: price, status: status, discount:discount } );
+			ajaxCall( 'api.php', addNewResponsed, { mod:'mboxing_ecoupon', type: 'addNewCoupon', coupon_name: coupon_name, times: times, price: price, status: status, discount:discount } );
 		});	
 	}else{
 		alert(response.msg);
@@ -55,7 +55,7 @@ function editResponsed(response){
 				alert('Price is empty.');
 				return false;
 			}
-			ajaxCall( 'api.php', editAccountResponsed, { mod:'mecoupon', type: 'updateCoupon', coupon_name: coupon_name, times: times, price: price, status: status, coupon_id: coupon_id, discount:discount } );			
+			ajaxCall( 'api.php', editAccountResponsed, { mod:'mboxing_ecoupon', type: 'updateCoupon', coupon_name: coupon_name, times: times, price: price, status: status, coupon_id: coupon_id, discount:discount } );			
 		});	
 	}else{
 		alert(response.msg);

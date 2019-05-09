@@ -39,28 +39,28 @@ defined('R88PROJ') or die ($system_error);
 				<a href="?mod=locker"><img src="images/mod_locker.png"></a>
 			</div>
 			<div class="col3">
-				<a href="?mod=coupon"><img src="images/mod_coupon.png"></a>
-			</div>
-			<div class="col3">
 				<a href="?mod=set_card"><img src="images/mod_set_card.png"></a>
 			</div>
 			<div class="col3">
 				<a href="?mod=set_snook"><img src="images/mod_set_snook.png"></a>
 			</div>
+			<div class="col3">
+				<a href="?mod=c2c"><img src="images/mod_cash.png"></a>
+			</div>
 			<div class="clear"></div>
 		</div>
 		<div class="onerow">
 			<div class="col3">
-				<a href="?mod=c2c"><img src="images/mod_cash.png"></a>
-			</div>
-			<div class="col3">
 				<a href="?mod=ecoupon"><img src="images/mod_ecoupon.png"></a>
 			</div>
 			<div class="col3">
-				<a href="?mod=cancel_order"><img src="images/mod_cancel_order.png"></a>
+				<a href="?mod=boxing"><img src="images/mod_boxing.png"></a>
 			</div>
 			<div class="col3">
-				<a href="?mod=boxing"><img src="images/mod_boxing.png"></a>
+				<a href="?mod=boxing_ecoupon"><img src="images/mod_boxing_ecoupon.png"></a>
+			</div>
+			<div class="col3">
+				<a href="?mod=cancel_order"><img src="images/mod_cancel_order.png"></a>
 			</div>
 			<div class="clear"></div>
 		</div>
@@ -140,7 +140,7 @@ defined('R88PROJ') or die ($system_error);
 					<a href="?mod=clear"><p>ระบบลบรายการ<br>ใส่ข้อมูลผิดพลาด</p></a>
 				</div>
 				<div class="col3">
-					<a href="?mod=mcoupon"><p>ระบบบริหารจัดการ<br>คูปอง</p></a>
+					<a href="?mod=report_daily"><p>รายการสั่งอาหารประจำวัน<br>แยกแผนก</p></a>
 				</div>
 							
 				<div class="clear"></div>
@@ -151,9 +151,9 @@ defined('R88PROJ') or die ($system_error);
 			<div class="result">
 				<div class="col3">
 					<a href="?mod=mecoupon"><p>ระบบบริหารจัดการ<br>eCoupon</p></a>
-				</div>
+				</div>	
 				<div class="col3">
-					<a href="?mod=report_daily"><p>รายการสั่งอาหารประจำวัน<br>แยกแผนก</p></a>
+					<a href="?mod=mboxing_ecoupon"><p>ระบบบริหารจัดการ<br>ยิมมวยคูปอง</p></a>
 				</div>
 							
 				<div class="clear"></div>
@@ -179,6 +179,16 @@ defined('R88PROJ') or die ($system_error);
 					<a href="?mod=mmenu"><p>ระบบบริหารจัดการ<br>เมนูอาหาร</p></a>
 				</div>	
 				<div class="clear"></div>
+				<br>
+			</div>
+		</div>
+		<div class="onerow">
+			<div class="result">
+				<div class="col3">
+					<a href="?mod=boxing_price"><p>ระบบกำหนดราคา<br>ค่าเรียนมวย</p></a>
+				</div>
+				<div class="clear"></div>
+				<br>
 			</div>
 		</div>
 		<?php } ?>

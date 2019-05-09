@@ -39,14 +39,14 @@ switch($type){
 		setPrice($snooker, '8');
 		setPrice($snookerV, '9');
 
-		$extraM =  mysql_real_escape_string($_REQUEST['extraM']);
+		/*$extraM =  mysql_real_escape_string($_REQUEST['extraM']);
 		$extraY =  mysql_real_escape_string($_REQUEST['extraY']);
 		$extraWM =  mysql_real_escape_string($_REQUEST['extraWM']);
 		$extraWY =  mysql_real_escape_string($_REQUEST['extraWY']);
 		setExtra($extraM, '4');
 		setExtra($extraY, '5');
 		setExtra($extraWM, '19');
-		setExtra($extraWY, '20');
+		setExtra($extraWY, '20');*/
 
 
 		$saunaSet =  mysql_real_escape_string($_REQUEST['saunaSet']);
@@ -60,4 +60,5 @@ switch($type){
 		
 		break;
 }
+// , memberBoxingKids1:memberBoxingKids1, memberBoxingKids3:memberBoxingKids3, memberBoxingKids4:memberBoxingKids4, memberBoxingKids12:memberBoxingKids12, memberBoxing1:memberBoxing1, memberBoxing3:memberBoxing3, memberBoxing4:memberBoxing4, memberBoxing12:memberBoxing12
 ?>

@@ -5,7 +5,7 @@ $coupon_id				= $_POST['coupon_id'];
 $type					= $_POST['type'];
 
 function getAddForm(){
-	$html = '<h3 class="title">Add New eCoupon</h3>';
+	$html = '<h3 class="title">Add New Boxing eCoupon</h3>';
 	$html .= '<ul class="form">';
 	$html .= '<li><span class="label">COUPON NAME</span><input type="text" id="coupon_name" maxlength="50"></li>';
 	$html .= '<li><span class="label">QTY.</span><input type="text" id="times" maxlength="20"></li>';
@@ -23,11 +23,11 @@ function getAddForm(){
 	returnJSON($json_arr);
 }
 function getEditForm($coupon_id){
-	$sql		= "SELECT * FROM `ecoupon` WHERE `id`='$coupon_id'";
+	$sql		= "SELECT * FROM `boxing_ecoupon` WHERE `id`='$coupon_id'";
 	$query	= mysql_query($sql);
 	$result	= mysql_fetch_assoc($query);
 
-	$html = '<h3 class="title">Edit eCoupon</h3>';
+	$html = '<h3 class="title">Edit Boxing eCoupon</h3>';
 	$html .= '<ul class="form">';
 	$html .= '<li><span class="label">COUPON NAME</span><input type="text" id="coupon_name" maxlength="50" value="'.$result['ecoupon_name'].'"></li>';
 	$html .= '<li><span class="label">QTY.</span><input type="text" id="times" maxlength="20" value="'.$result['qty'].'"></li>';
@@ -53,7 +53,7 @@ function getEditForm($coupon_id){
 	returnJSON($json_arr);
 }
 function addNewCoupon($coupon_name, $qty, $price, $status, $discount){
-	$sql	= "INSERT INTO `ecoupon` (`ecoupon_name`, `price`, `status`, `qty`, `discount`) VALUES ('$coupon_name', '$price', '$status', '$qty', '$discount')";
+	$sql	= "INSERT INTO `boxing_ecoupon` (`ecoupon_name`, `price`, `status`, `qty`, `discount`) VALUES ('$coupon_name', '$price', '$status', '$qty', '$discount')";
 	$query	= mysql_query($sql);
 	//`position`='0'
 
@@ -65,7 +65,7 @@ function addNewCoupon($coupon_name, $qty, $price, $status, $discount){
 	returnJSON($json_arr);
 }
 function updateCoupon($coupon_name, $qty, $price, $status, $coupon_id, $discount){
-	$sql	= "UPDATE `ecoupon` SET `ecoupon_name`='$coupon_name', `price`='$price', `status`='$status', `qty`='$qty', `discount`='$discount' WHERE `id`='$coupon_id'";	
+	$sql	= "UPDATE `boxing_ecoupon` SET `ecoupon_name`='$coupon_name', `price`='$price', `status`='$status', `qty`='$qty', `discount`='$discount' WHERE `id`='$coupon_id'";	
 	$query	= mysql_query($sql);
 
 	global $system_status_success;
@@ -76,10 +76,10 @@ function updateCoupon($coupon_name, $qty, $price, $status, $coupon_id, $discount
 	returnJSON($json_arr);
 }
 function changeCouponStatus($coupon){
-	$sql = "UPDATE `ecoupon` SET `status`=IF(`status`=1, 0, 1) WHERE `id`='$coupon'";
+	$sql = "UPDATE `boxing_ecoupon` SET `status`=IF(`status`=1, 0, 1) WHERE `id`='$coupon'";
 	$query	= mysql_query($sql);
 
-	$sql = "SELECT `status` FROM `ecoupon` WHERE `id`='$coupon'";
+	$sql = "SELECT `status` FROM `boxing_ecoupon` WHERE `id`='$coupon'";
 	$query	= mysql_query($sql);
 	$result	= mysql_fetch_assoc($query);
 	global $system_status_success;
